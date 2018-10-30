@@ -1,0 +1,220 @@
+msgid ""
+msgstr "Content-Type: text/plain; charset=UTF-8"
+
+msgid "Advanced Settings"
+msgstr ""
+
+msgid "Basic Authentication"
+msgstr ""
+
+msgid "Can\\'t load non-SSL terminal into page loaded over HTTPS"
+msgstr ""
+
+msgid "Check origin"
+msgstr ""
+
+msgid "Common name (/CN)"
+msgstr ""
+
+msgid "Country name (/C)"
+msgstr ""
+
+msgid "Credentials for basic authentication"
+msgstr ""
+
+msgid "Do not allow clients to write to the TTY"
+msgstr ""
+
+msgid "Do not allow websocket connection from different origin"
+msgstr ""
+
+msgid "Enable SSL"
+msgstr ""
+
+msgid "General Settings"
+msgstr ""
+
+msgid "HTTPS certificate (PEM&nbsp;format)"
+msgstr ""
+
+msgid "HTTPS private key (PEM&nbsp;format)"
+msgstr ""
+
+msgid ""
+"If terminal is not displayed and you use self-signed SSL certificate may you "
+"need to open terminal in a separate window using the appropriate button "
+"above and approve the certificate manually. After approving the certificate "
+"you need to reload this page."
+msgstr ""
+
+msgid "Interface"
+msgstr ""
+
+msgid "LLL_CLIENT"
+msgstr ""
+
+msgid "LLL_DEBUG"
+msgstr ""
+
+msgid "LLL_ERR"
+msgstr ""
+
+msgid "LLL_EXT"
+msgstr ""
+
+msgid "LLL_HEADER"
+msgstr ""
+
+msgid "LLL_INFO"
+msgstr ""
+
+msgid "LLL_LATENCY"
+msgstr ""
+
+msgid "LLL_NOTICE"
+msgstr ""
+
+msgid "LLL_THREAD"
+msgstr ""
+
+msgid "LLL_USER"
+msgstr ""
+
+msgid "LLL_WARN"
+msgstr ""
+
+msgid "Length of the private key in bits"
+msgstr ""
+
+msgid "Locality name (/L)"
+msgstr ""
+
+msgid "Maximum clients"
+msgstr ""
+
+msgid "Maximum clients to support (default: 0, no limit)"
+msgstr ""
+
+msgid "Message types for logging"
+msgstr ""
+
+msgid "Must have certificate when using SSL"
+msgstr ""
+
+msgid "Must have key when using SSL"
+msgstr ""
+
+msgid "Network interface to bind"
+msgstr ""
+
+msgid "Number of days a generated certificate is valid"
+msgstr ""
+
+msgid "Open terminal in a separate window"
+msgstr ""
+
+msgid "Organization name (/O)"
+msgstr ""
+
+msgid "Organizational unit name (/OU)"
+msgstr ""
+
+msgid "Password"
+msgstr ""
+
+msgid "Password for basic authentication"
+msgstr ""
+
+msgid "Port"
+msgstr ""
+
+msgid "Port to listen (default: 7681)"
+msgstr ""
+
+msgid "Read only"
+msgstr ""
+
+msgid "Reconnect"
+msgstr ""
+
+msgid "Remove certificate and key"
+msgstr ""
+
+msgid "SSL Settings"
+msgstr ""
+
+msgid "SSL certificate file path"
+msgstr ""
+
+msgid "SSL key file path"
+msgstr ""
+
+msgid ""
+"Select websockets library message types for logging (default: LLL_ERR and "
+"LLL_WARN)"
+msgstr ""
+
+msgid "Self-signed SSL certificate parameters"
+msgstr ""
+
+msgid "Setup"
+msgstr ""
+
+msgid "Start TTYd server"
+msgstr ""
+
+msgid "State or province name (/ST)"
+msgstr ""
+
+msgid "TTYd server is not running"
+msgstr ""
+
+msgid "TTYd server settings"
+msgstr ""
+
+msgid ""
+"TTYd will generate a new self-signed certificate using the configuration "
+"shown below"
+msgstr ""
+
+msgid "Terminal"
+msgstr ""
+
+msgid "Terminal settings"
+msgstr ""
+
+msgid "The city where your company is legally located"
+msgstr ""
+
+msgid "The fully-qualified domain name"
+msgstr ""
+
+msgid "The name of your department within the organization"
+msgstr ""
+
+msgid "The state/province where your company is legally located"
+msgstr ""
+
+msgid "The two-letter country code where your company is legally located"
+msgstr ""
+
+msgid "Time to reconnect for the client in seconds (default: 10)"
+msgstr ""
+
+msgid "Use basic authentication"
+msgstr ""
+
+msgid "Username"
+msgstr ""
+
+msgid "Username for basic authentication"
+msgstr ""
+
+msgid ""
+"You can enable SSL in terminal settings page or use HTTP connection instead "
+"of HTTPS. Also you can open terminal in a separate window using the "
+"appropriate button below."
+msgstr ""
+
+msgid "Your company's legally registered name"
+msgstr ""

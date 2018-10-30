@@ -1,0 +1,72 @@
+<%+header%>
+<style>
+	#ttyd-terminal {
+		width: 100%;
+		min-height: 500px;
+		border: 1px solid #888;
+	}
+</style>
+
+<div class="cbi-map">
+	<h2 name="content"><%=translate("Terminal")%></h2>
+	<div class="cbi-section">
+		<% if is_running == 1 then %>
+			<div id="ttyd-terminal-container">
+				<iframe id="ttyd-terminal"></iframe>
+			</div>
+	</div>
+	<div class="cbi-section">
+			<p>
+				<a target="blank" class="cbi-button cbi-button-apply" id="ttyd-terminal-button" href="#"><%:Open terminal in a separate window%></a>
+			</p>
+	</div>
+			<% if ssl == 1 then %>
+				<div class="cbi-section"><p>
+					<%=translate(
+						"If terminal is not displayed and you use self-signed " ..
+						"SSL certificate may you need to open terminal in a separate " ..
+						"browser window using the appropriate button above and " ..
+						"approve the certificate manually. After approving the " ..
+						"certificate you need to reload this page.")
+					%>
+				</p></div>
+			<% end %>
+		<% else %>
+			<div class="cbi-section"><p>
+				<p class="alert-message warning">
+				<%:TTYd server is not running%>
+				</p>
+				<p><a class="cbi-button cbi-button-apply" href="<%=url("admin/ttyd/start")%>"><%:Start TTYd server%></a></p>
+			</div>
+		<% end %>
+	</div>
+</div>
+<script type="text/javascript">
+	var link = <% if ssl == 0 then %>"http://"<% else %>"https://"<% end %>
+		+ window.location.hostname + ":<%=port%>"
+
+	<% if ssl == 0 then %>
+		if (window.location.protocol === "https:")
+		{
+			document.getElementById("ttyd-terminal-container").innerHTML = 
+				'<div class="alert-message warning">' +
+				'<h4><%:Can\'t load non-SSL terminal into page loaded over HTTPS%></h4>' +
+				'<%=translate("You can enable SSL in terminal settings page or use " ..
+				              "HTTP connection instead of HTTPS. Also you can open " ..
+				              "terminal in a separate window using the appropriate " ..
+				              "button below.")%>' +
+				'</div>'
+
+		}
+		else
+		{
+			document.getElementById("ttyd-terminal").src = link
+		}
+	<% else %>
+		document.getElementById("ttyd-terminal").src = link
+	<% end %>
+
+	document.getElementById("ttyd-terminal-button").href = link
+</script>
+
+<%+footer%>
