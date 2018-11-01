@@ -21,17 +21,16 @@
 
 <div class="cbi-map">
 	<h2 name="content"><%=translate("Terminal")%></h2>
-	<div class="cbi-section">
-		<% if is_running == 1 then %>
-			<div id="ttyd-terminal-container">
-				<iframe id="ttyd-terminal"></iframe>
-			</div>
-	</div>
-	<div class="cbi-section">
-			<p>
-				<a target="blank" class="cbi-button cbi-button-apply" id="ttyd-terminal-button" href="#"><%:Open terminal in a separate window%></a>
-			</p>
-	</div>
+	<% if is_running == 1 then %>
+		<div class="cbi-section"><div id="ttyd-terminal-container">
+			<iframe id="ttyd-terminal"></iframe>
+		</div></div>
+		<div class="cbi-section">
+			<p><a target="blank"
+				class="cbi-button cbi-button-apply"
+				id="ttyd-terminal-button" href="#"><%:Open terminal in a separate window%></a></p>
+		</div>
+		<div class="cbi-section">
 			<% if ssl == 1 then %>
 				<div class="cbi-section"><p>
 					<%=translate(
@@ -43,16 +42,18 @@
 					%>
 				</p></div>
 			<% end %>
-		<% else %>
+		</div>
+	<% else %>
+		<div class="cbi-section">
 			<div class="cbi-section"><p>
-				<p class="alert-message warning">
-				<%:TTYd server is not running%>
-				</p>
-				<p><a class="cbi-button cbi-button-apply" href="<%=url("admin/ttyd/start")%>"><%:Start TTYd server%></a></p>
+				<p class="alert-message warning"><%:TTYd server is not running%></p>
+				<p><a class="cbi-button cbi-button-apply"
+					href="<%=url("admin/ttyd/start")%>"><%:Start TTYd server%></a></p>
 			</div>
-		<% end %>
-	</div>
+		</div>
+	<% end %>
 </div>
+
 <script type="text/javascript">
 	var link = <% if ssl == 0 then %>"http://"<% else %>"https://"<% end %>
 		+ window.location.hostname + ":<%=port%>"
@@ -77,7 +78,6 @@
 	<% else %>
 		document.getElementById("ttyd-terminal").src = link
 	<% end %>
-
 	document.getElementById("ttyd-terminal-button").href = link
 </script>
 
