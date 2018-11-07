@@ -14,15 +14,13 @@ function index()
 		nixio.fs.writefile("/etc/config/ttyd", "")
 	end
 
-	-- top level entry
-	entry({"admin", "ttyd"}, template("admin/ttyd/terminal"), _("Terminal"), 80)
-
 	-- menu items
-	entry({"admin", "ttyd", "terminal"}, call("view_terminal"), _("Terminal"), 10).leaf = true
-	entry({"admin", "ttyd", "configure"}, cbi("ttyd/setup"), _("Setup"), 20)
+	entry({"admin", "system", "terminal"}, firstchild(), _("Terminal"), 80)
+	entry({"admin", "system", "terminal", "terminal"}, call("view_terminal"), _("Terminal"), 10)
+	entry({"admin", "system", "terminal", "configure"}, cbi("ttyd/setup"), _("Setup"), 20)
 
 	-- actions
-	entry({"admin", "ttyd", "start"}, call("action_start"))
+	entry({"admin", "system", "ttyd", "start"}, call("action_start"))
 end
 
 function view_terminal()
@@ -42,5 +40,5 @@ end
 function action_start()
 	local http = require "luci.http"
 	luci.sys.init.start("ttyd")
-	http.redirect(luci.dispatcher.build_url('admin/ttyd/terminal'))
+	http.redirect(luci.dispatcher.build_url('admin/system/ttyd/terminal'))
 end
