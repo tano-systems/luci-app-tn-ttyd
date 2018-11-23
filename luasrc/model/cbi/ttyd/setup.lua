@@ -96,7 +96,7 @@ o = s:taboption("advanced", MultiValue, "debug",
 o.default = "1 2"
 o.delimiter = " "
 o.widget = "checkbox"
-o.size = 1
+o.size = 11
 
 o:value(   1, translate("LLL_ERR"))
 o:value(   2, translate("LLL_WARN"))
