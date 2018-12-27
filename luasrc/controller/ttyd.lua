@@ -20,7 +20,7 @@ function index()
 	entry({"admin", "system", "terminal", "configure"}, cbi("ttyd/setup"), _("Setup"), 20)
 
 	-- actions
-	entry({"admin", "system", "ttyd", "start"}, call("action_start"))
+	entry({"admin", "system", "terminal", "start"}, call("action_start"))
 end
 
 function view_terminal()
@@ -40,5 +40,5 @@ end
 function action_start()
 	local http = require "luci.http"
 	luci.sys.init.start("ttyd")
-	http.redirect(luci.dispatcher.build_url('admin/system/ttyd/terminal'))
+	http.redirect(luci.dispatcher.build_url('admin/system/terminal/terminal'))
 end

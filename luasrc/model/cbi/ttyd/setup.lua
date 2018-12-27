@@ -174,7 +174,7 @@ function o.write(self, section)
 	end
 
 	luci.sys.call("/etc/init.d/ttyd restart")
-	luci.http.redirect(luci.dispatcher.build_url("admin", "system", "ttyd", "configure"))
+	luci.http.redirect(luci.dispatcher.build_url("admin", "system", "terminal", "configure"))
 end
 
 ---------------------------
