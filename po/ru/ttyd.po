@@ -3,7 +3,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Project-Id-Version: \n"
 "POT-Creation-Date: 2018-10-31 05:00+0300\n"
-"PO-Revision-Date: 2018-10-31 06:56+0300\n"
+"PO-Revision-Date: 2019-06-03 15:32+0300\n"
 "Last-Translator: Anton Kikin <a.kikin@tano-systems.com>\n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
@@ -43,7 +43,7 @@ msgstr "Не разрешать websocket подключения с других
 msgid "Enable SSL"
 msgstr "Включить SSL"
 
-msgid "General Settings"
+msgid "Basic Settings"
 msgstr "Основные настройки"
 
 msgid "HTTPS certificate (PEM&nbsp;format)"

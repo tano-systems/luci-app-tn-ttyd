@@ -15,7 +15,7 @@ s.addremove = false
 
 ---------------------------
 
-s:tab("general", translate("General Settings"))
+s:tab("basic", translate("Basic Settings"))
 s:tab("advanced", translate("Advanced Settings"))
 s:tab("ssl", translate("SSL Settings"))
 s:tab("basic_auth", translate("Basic Authentication"))
@@ -24,7 +24,7 @@ s:tab("basic_auth", translate("Basic Authentication"))
 
 -- [port, -p]
 -- Port to listen (default: 7681, use `0` for random port)
-o = s:taboption("general", Value, "port",
+o = s:taboption("basic", Value, "port",
 	translate("Port"),
 	translate("Port to listen (default: 7681)"))
 
@@ -35,7 +35,7 @@ o.placeholder = 7681
 
 -- [interface, -i]
 -- Network interface to bind (eg: eth0), or UNIX domain socket path (eg: /var/run/ttyd.sock)
-o = s:taboption("general", Value, "interface",
+o = s:taboption("basic", Value, "interface",
 	translate("Interface"),
 	translate("Network interface to bind"))
 

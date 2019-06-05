@@ -31,7 +31,7 @@ msgstr ""
 msgid "Enable SSL"
 msgstr ""
 
-msgid "General Settings"
+msgid "Basic Settings"
 msgstr ""
 
 msgid "HTTPS certificate (PEM&nbsp;format)"
