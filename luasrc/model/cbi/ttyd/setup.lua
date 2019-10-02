@@ -37,7 +37,7 @@ o.placeholder = 7681
 -- Network interface to bind (eg: eth0), or UNIX domain socket path (eg: /var/run/ttyd.sock)
 o = s:taboption("basic", Value, "interface",
 	translate("Interface"),
-	translate("Network interface to bind"))
+	translate("Listen only on the given interface or, if unspecified, on all"))
 
 o.default = nil
 o.template = "cbi/network_netlist"

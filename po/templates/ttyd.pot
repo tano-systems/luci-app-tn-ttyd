@@ -1,220 +1,282 @@
 msgid ""
 msgstr "Content-Type: text/plain; charset=UTF-8"
 
+#: luasrc/model/cbi/ttyd/setup.lua:19
 msgid "Advanced Settings"
 msgstr ""
 
+#: luasrc/model/cbi/ttyd/setup.lua:21
 msgid "Basic Authentication"
 msgstr ""
 
-msgid "Can\\'t load non-SSL terminal into page loaded over HTTPS"
-msgstr ""
-
-msgid "Check origin"
-msgstr ""
-
-msgid "Common name (/CN)"
-msgstr ""
-
-msgid "Country name (/C)"
-msgstr ""
-
-msgid "Credentials for basic authentication"
-msgstr ""
-
-msgid "Do not allow clients to write to the TTY"
-msgstr ""
-
-msgid "Do not allow websocket connection from different origin"
-msgstr ""
-
-msgid "Enable SSL"
-msgstr ""
-
+#: luasrc/model/cbi/ttyd/setup.lua:18
 msgid "Basic Settings"
 msgstr ""
 
+#: luasrc/view/ttyd/terminal.htm:66
+msgid "Can't load non-SSL terminal into page loaded over HTTPS"
+msgstr ""
+
+#: luasrc/model/cbi/ttyd/setup.lua:63
+msgid "Check origin"
+msgstr ""
+
+#: luasrc/model/cbi/ttyd/setup.lua:260
+msgid "Common name (/CN)"
+msgstr ""
+
+#: luasrc/model/cbi/ttyd/setup.lua:220
+msgid "Country name (/C)"
+msgstr ""
+
+#: luasrc/model/cbi/ttyd/setup.lua:175
+msgid "Credentials for basic authentication"
+msgstr ""
+
+#: luasrc/model/cbi/ttyd/setup.lua:54
+msgid "Do not allow clients to write to the TTY"
+msgstr ""
+
+#: luasrc/model/cbi/ttyd/setup.lua:64
+msgid "Do not allow websocket connection from different origin"
+msgstr ""
+
+#: luasrc/model/cbi/ttyd/setup.lua:111
+msgid "Enable SSL"
+msgstr ""
+
+#: luasrc/model/cbi/ttyd/setup.lua:134
 msgid "HTTPS certificate (PEM&nbsp;format)"
 msgstr ""
 
+#: luasrc/model/cbi/ttyd/setup.lua:143
 msgid "HTTPS private key (PEM&nbsp;format)"
 msgstr ""
 
+#: luasrc/view/ttyd/terminal.htm:36
 msgid ""
 "If terminal is not displayed and you use self-signed SSL certificate may you "
-"need to open terminal in a separate window using the appropriate button "
-"above and approve the certificate manually. After approving the certificate "
-"you need to reload this page."
+"need to open terminal in a separate browser window using the appropriate "
+"button above and approve the certificate manually. After approving the "
+"certificate you need to reload this page."
 msgstr ""
 
+#: luasrc/model/cbi/ttyd/setup.lua:39
 msgid "Interface"
 msgstr ""
 
+#: luasrc/model/cbi/ttyd/setup.lua:97
 msgid "LLL_CLIENT"
 msgstr ""
 
+#: luasrc/model/cbi/ttyd/setup.lua:94
 msgid "LLL_DEBUG"
 msgstr ""
 
+#: luasrc/model/cbi/ttyd/setup.lua:90
 msgid "LLL_ERR"
 msgstr ""
 
+#: luasrc/model/cbi/ttyd/setup.lua:96
 msgid "LLL_EXT"
 msgstr ""
 
+#: luasrc/model/cbi/ttyd/setup.lua:95
 msgid "LLL_HEADER"
 msgstr ""
 
+#: luasrc/model/cbi/ttyd/setup.lua:93
 msgid "LLL_INFO"
 msgstr ""
 
+#: luasrc/model/cbi/ttyd/setup.lua:98
 msgid "LLL_LATENCY"
 msgstr ""
 
+#: luasrc/model/cbi/ttyd/setup.lua:92
 msgid "LLL_NOTICE"
 msgstr ""
 
+#: luasrc/model/cbi/ttyd/setup.lua:100
 msgid "LLL_THREAD"
 msgstr ""
 
+#: luasrc/model/cbi/ttyd/setup.lua:99
 msgid "LLL_USER"
 msgstr ""
 
+#: luasrc/model/cbi/ttyd/setup.lua:91
 msgid "LLL_WARN"
 msgstr ""
 
+#: luasrc/model/cbi/ttyd/setup.lua:212
 msgid "Length of the private key in bits"
 msgstr ""
 
+#: luasrc/model/cbi/ttyd/setup.lua:40
+msgid "Listen only on the given interface or, if unspecified, on all"
+msgstr ""
+
+#: luasrc/model/cbi/ttyd/setup.lua:236
 msgid "Locality name (/L)"
 msgstr ""
 
+#: luasrc/model/cbi/ttyd/setup.lua:73
 msgid "Maximum clients"
 msgstr ""
 
+#: luasrc/model/cbi/ttyd/setup.lua:74
 msgid "Maximum clients to support (default: 0, no limit)"
 msgstr ""
 
+#: luasrc/model/cbi/ttyd/setup.lua:82
 msgid "Message types for logging"
 msgstr ""
 
+#: luasrc/model/cbi/ttyd/setup.lua:118
 msgid "Must have certificate when using SSL"
 msgstr ""
 
+#: luasrc/model/cbi/ttyd/setup.lua:124
 msgid "Must have key when using SSL"
 msgstr ""
 
-msgid "Network interface to bind"
-msgstr ""
-
+#: luasrc/model/cbi/ttyd/setup.lua:204
 msgid "Number of days a generated certificate is valid"
 msgstr ""
 
+#: luasrc/view/ttyd/terminal.htm:31
 msgid "Open terminal in a separate window"
 msgstr ""
 
+#: luasrc/model/cbi/ttyd/setup.lua:244
 msgid "Organization name (/O)"
 msgstr ""
 
+#: luasrc/model/cbi/ttyd/setup.lua:252
 msgid "Organizational unit name (/OU)"
 msgstr ""
 
+#: luasrc/model/cbi/ttyd/setup.lua:187
 msgid "Password"
 msgstr ""
 
+#: luasrc/model/cbi/ttyd/setup.lua:188
 msgid "Password for basic authentication"
 msgstr ""
 
+#: luasrc/model/cbi/ttyd/setup.lua:28
 msgid "Port"
 msgstr ""
 
+#: luasrc/model/cbi/ttyd/setup.lua:29
 msgid "Port to listen (default: 7681)"
 msgstr ""
 
+#: luasrc/model/cbi/ttyd/setup.lua:53
 msgid "Read only"
 msgstr ""
 
-msgid "Reconnect"
-msgstr ""
-
+#: luasrc/model/cbi/ttyd/setup.lua:150
 msgid "Remove certificate and key"
 msgstr ""
 
+#: luasrc/model/cbi/ttyd/setup.lua:20
 msgid "SSL Settings"
 msgstr ""
 
+#: luasrc/model/cbi/ttyd/setup.lua:135
 msgid "SSL certificate file path"
 msgstr ""
 
+#: luasrc/model/cbi/ttyd/setup.lua:144
 msgid "SSL key file path"
 msgstr ""
 
+#: luasrc/model/cbi/ttyd/setup.lua:83
 msgid ""
 "Select websockets library message types for logging (default: LLL_ERR and "
 "LLL_WARN)"
 msgstr ""
 
+#: luasrc/model/cbi/ttyd/setup.lua:197
 msgid "Self-signed SSL certificate parameters"
 msgstr ""
 
+#: luasrc/controller/ttyd.lua:20
 msgid "Setup"
 msgstr ""
 
+#: luasrc/view/ttyd/terminal.htm:51
 msgid "Start TTYd server"
 msgstr ""
 
+#: luasrc/model/cbi/ttyd/setup.lua:228
 msgid "State or province name (/ST)"
 msgstr ""
 
+#: luasrc/view/ttyd/terminal.htm:49
 msgid "TTYd server is not running"
 msgstr ""
 
+#: luasrc/model/cbi/ttyd/setup.lua:12
 msgid "TTYd server settings"
 msgstr ""
 
+#: luasrc/model/cbi/ttyd/setup.lua:151
 msgid ""
 "TTYd will generate a new self-signed certificate using the configuration "
 "shown below"
 msgstr ""
 
+#: luasrc/controller/ttyd.lua:18 luasrc/controller/ttyd.lua:19
+#: luasrc/view/ttyd/terminal.htm:23
 msgid "Terminal"
 msgstr ""
 
+#: luasrc/model/cbi/ttyd/setup.lua:10
 msgid "Terminal settings"
 msgstr ""
 
+#: luasrc/model/cbi/ttyd/setup.lua:237
 msgid "The city where your company is legally located"
 msgstr ""
 
+#: luasrc/model/cbi/ttyd/setup.lua:261
 msgid "The fully-qualified domain name"
 msgstr ""
 
+#: luasrc/model/cbi/ttyd/setup.lua:253
 msgid "The name of your department within the organization"
 msgstr ""
 
+#: luasrc/model/cbi/ttyd/setup.lua:229
 msgid "The state/province where your company is legally located"
 msgstr ""
 
+#: luasrc/model/cbi/ttyd/setup.lua:221
 msgid "The two-letter country code where your company is legally located"
 msgstr ""
 
-msgid "Time to reconnect for the client in seconds (default: 10)"
-msgstr ""
-
+#: luasrc/model/cbi/ttyd/setup.lua:174
 msgid "Use basic authentication"
 msgstr ""
 
+#: luasrc/model/cbi/ttyd/setup.lua:180
 msgid "Username"
 msgstr ""
 
+#: luasrc/model/cbi/ttyd/setup.lua:181
 msgid "Username for basic authentication"
 msgstr ""
 
+#: luasrc/view/ttyd/terminal.htm:67
 msgid ""
 "You can enable SSL in terminal settings page or use HTTP connection instead "
 "of HTTPS. Also you can open terminal in a separate window using the "
 "appropriate button below."
 msgstr ""
 
+#: luasrc/model/cbi/ttyd/setup.lua:245
 msgid "Your company's legally registered name"
 msgstr ""
