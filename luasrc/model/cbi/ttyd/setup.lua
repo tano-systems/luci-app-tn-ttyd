@@ -47,17 +47,6 @@ o.nobridges = false
 
 ---------------------------
 
--- [reconnect, -r]
--- Time to reconnect for the client in seconds (default: 10)
-o= s:taboption("advanced", Value, "reconnect",
-	translate("Reconnect"),
-	translate("Time to reconnect for the client in seconds (default: 10)"))
-
-o.datatype = "integer"
-o.rmempty = true
-o.placeholder = 10
-o.default = 10
-
 -- [readonly, -R]
 -- Do not allow clients to write to the TTY
 o = s:taboption("advanced", Flag, "readonly",
