@@ -24,7 +24,12 @@ function index()
 end
 
 function view_terminal()
-	local is_running = luci.sys.exec("/etc/init.d/ttyd status")
+	local code = luci.sys.call("/etc/init.d/ttyd status >/dev/null")
+	local is_running = 0
+
+	if code == 0 then
+		is_running = 1
+	end
 
 	local uci  = require "luci.model.uci".cursor()
 	local ssl  = uci:get("ttyd", "server", "ssl") or "0"
